@@ -1,0 +1,347 @@
+@charset "utf-8";
+@font-face {
+    font-family:'lemon';
+    src: url('Font/Bellerose.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+* {
+    padding:0;
+    margin:0;
+    border:0;
+    list-style: none;
+}
+  input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+  }
+  body {
+      font-family: lemon;
+      font-size: 20px;
+  }
+  .clear {
+      clear:both;
+  }
+  .wrapper {
+      width: 1140px;
+      margin: 0 auto;
+      
+  }
+  #nav li{
+      display: inline-block;
+      width: 120px;
+      text-align: center;
+  }
+  #nav li:hover, #nav li a:hover{
+      background-color: rgb(153, 153, 153);
+      transition: 0.3s;
+      color: rgb(253, 185, 177);
+      
+  }
+  #nav li a {
+      display: block;
+      text-decoration: none;
+      color:whitesmoke;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding-bottom: 5px;
+  }
+  #topmenu {
+      background-color: black;
+     
+  }
+  #header {
+      background-color: rgb(253, 185, 177);
+      
+  }
+  #search {
+      float:left;
+      width:800px;
+      color:white;
+  }
+  #search h1 {
+      text-align: left;
+      font-size: 55px;
+      padding:18px;
+      font-weight: bold;
+      height:80px;
+  }
+  #search form {
+      padding:20px;
+  }
+  #search input[type="search"]{
+      border-radius: 5px;
+      width: 365px;
+      border-bottom: 3px solid rgb(170, 170, 170);
+  }
+  #search input[type="submit"]{
+      width: 100px;
+      border-radius: 5px;;
+  }
+  #search .button {
+      color:rgb(255, 255, 255);
+      width:100px;
+      border-radius: 5px;
+      padding-bottom: 3px;
+      background-image: linear-gradient( grey, rgb(61, 61, 61));
+
+  }
+  #search .button:hover {
+      background-image: linear-gradient( rgb(95, 95, 95), rgb(27, 27, 27));
+  }
+  #login{
+      margin:15px;
+      font-size:16px;
+      color:white;
+      float:right;
+  }
+  #login fieldset {
+      border:1px solid whitesmoke;
+      padding:10px;
+      margin:0;
+  }
+  #login legend {
+      padding: 0 10px;
+      margin-left:10px;
+      color:whitesmoke;
+  }
+  #login label {
+      display:inline-block;
+      width:100px;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  #login input {
+      margin:5px;
+      vertical-align: middle;
+      padding:3px;
+     
+  }
+  #login input[type="text"], #login input[type="password"]{
+      border-radius: 4px;
+      padding:3px;
+      border: 1px solid grey;
+      width:160px;
+  }
+  #login .button {
+      text-align: center;
+      margin:5px;
+      color:white;
+      padding:3px;
+      text-decoration: none;
+      width:75px;
+      border-radius: 4px;
+      background-image: linear-gradient( grey, rgb(61, 61, 61));
+      float:right;
+      cursor: pointer;
+  }
+  #login input[type="submit"] {
+      margin-right:50px;
+  }
+  #login .button:hover {
+      background-image: linear-gradient( rgb(95, 95, 95), rgb(27, 27, 27));
+  }
+  #main {
+      background-color: lightgray;
+      
+  }
+  #sidebar {
+      width:260px;
+      float:left;
+      margin-top: 20px;
+      border:1px solid grey;
+     
+  }
+  #sidebar h2 {
+      background-color: rgb(0, 0, 0);
+      text-align: center;
+      color:whitesmoke;
+      height:65px;
+       padding:5px;
+      font-size:24px;
+  }
+  #cats {
+      background-color:whitesmoke ;
+  }
+  #cats li {
+      padding:4px 20px;
+    
+}
+
+#cats a::before {
+    content:'\00bb';
+    margin-right: 5px;
+}
+  #cats > li {
+      border-bottom: 1px solid lightslategray;
+  }
+  #cats li li {
+      font-size:16px;
+  }
+  #cats a {
+      text-decoration: none;
+      color:grey;
+  }
+  #cats a:hover {
+      color:black;
+  }
+  #content {
+      float: right;
+      margin-top:20px;
+      margin-left:20px;
+      width:830px;
+      border: 1px solid;
+  }
+  .main-bar h2 {
+      color:white;
+      background-color: black;
+      border: 1px solid rgb(0, 0, 0);
+      padding-bottom: 5px;
+      padding-left:350px;
+      
+
+  }
+.post {
+    background-color: white;
+    width:260px;
+    height:310px;
+    float:left;
+    border: 1px solid grey;
+    margin:7px;
+    border-radius: 6px;
+    overflow:hidden;
+    padding-bottom: 5px;
+}
+.post img {
+    display: block;
+}
+.left {
+    float: left; 
+}
+.right {
+    float: right;
+}
+.postlabel {
+    font-size:18px;
+    color:black;
+    text-align: center;
+    border-radius: 3px;
+    border: 2px solid grey;
+    width: 90px;
+    height:40px;
+    padding: 2px;
+    margin: 8px;
+    background-image: linear-gradient(lightgrey, whitesmoke);
+}
+.postlabel:hover {
+    background-image: linear-gradient(rgb(185, 185, 185), rgb(221, 219, 219));
+
+}
+.post:hover {
+    box-shadow: 0 0 6px 2px grey;
+}
+.post a {
+    text-decoration: none;
+
+}
+.post h3 {
+    color: black;
+    padding-left:5px;
+    font-size:18px;
+    font-weight: normal;
+    height:50px;
+    border-bottom: 1px solid lightgrey;
+   
+}
+.post1 {
+    background-color: white;
+    width:398px;
+    height:415px;
+    float:left;
+    border: 1px solid grey;
+    margin:7px;
+    border-radius: 6px;
+    overflow:hidden;
+    padding-bottom: 5px;
+}
+
+.post1 img {
+    display: block;
+}
+.post1:hover {
+    box-shadow: 0 0 6px 2px grey;
+}
+
+.main-bar::after {
+    display: block;
+    content:'';
+    clear:both;
+    margin-bottom: 30px;
+}
+.lower-bar h2 {
+    background-color: black;
+    color:rgb(245, 245, 245);
+    border: 1px solid rgb(0, 0, 0);
+    padding-bottom: 5px;
+    padding-left:350px
+    
+}
+  #footer {
+      padding-bottom: 5px;
+      color:white;
+      background-color: rgb(0, 0, 0);
+      border-top: 4px solid rgb(253, 185, 177)
+      
+      
+  }
+  #footer::after {
+      content:'';
+      clear:both;
+      display: block;
+  }
+  #sitemap {
+      margin:10px 120px;
+      width:250px;
+      
+  }
+  #sitemap h3 {
+      font-weight: normal;
+      border-bottom: 4px solid whitesmoke;
+      width: 200px;
+  }
+  #sitemap a {
+      color:whitesmoke;
+      text-decoration: none;
+      padding: 2px 10px;
+      font-size: 16px;
+      display: block;
+      border-bottom:1px dotted whitesmoke;
+      width: 150px;
+  }
+  #sitemap a:hover{
+      border-bottom:1px solid whitesmoke;
+      background-color: rgb(36, 36, 36);
+      font-size: 16.5px;
+
+  }
+  #about {
+      margin: 10px 0 0 5px;
+      width:250px;
+
+  }
+  #about h3 {
+      font-weight: normal;
+      border-bottom: 4px solid whitesmoke;
+  }
+  #about form label {
+      font-size: 16px;
+      display: block;
+      
+    
+  }
+  #about form input {
+      border-radius: 4px;
+      box-shadow: 0 0 5px inset;
+      width:250px;
+  }
